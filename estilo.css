@@ -1,0 +1,19 @@
+body {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    margin-top: 12%;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
