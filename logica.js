@@ -5,6 +5,13 @@ async function BuscarClima() {
     const resposta = await fetch(url);
     const dados = await resposta.json();
 
+    if(dados.message === "NOT_FOUND") {
+        document.getElementById("resultado").innerHTML = `
+            <p>Cidade não encontrada</p>
+        `;
+        return;
+    }
+    // caso de cidade encontrada
     document.getElementById("resultado").innerHTML = `
         <h2>Clima em ${cidade}</h2>
         <p>Temperatura: ${dados.temperature}</p>
@@ -12,3 +19,10 @@ async function BuscarClima() {
         <p>Descrição: ${dados.description}</p>
     `;
 }
+
+document.getElementById("cidade").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        BuscarClima();
+    }
+});
+
