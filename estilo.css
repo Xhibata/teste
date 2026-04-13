@@ -17,11 +17,13 @@ body {
     border-radius: 18px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
     padding: 80px;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    min-height: 50vh;
+    /* min-width: 45%; */
 }
 
 input {
-    padding: 10px 12px;
+    padding: 20px 20px;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 10px;
     outline: none;
@@ -34,7 +36,7 @@ input:focus {
 }
 
 .caixa-busca{
-    width: 300px;
+    width: 400px;
     padding: 15px;
     border-radius: 20px;
     border: 2px solid #333;
@@ -43,10 +45,11 @@ input:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    max-width: 400px;
 
 }
 .caixa-resultado {
-    width: 300px;
+    width: 400px;
     padding: 15px;
     border-radius: 20px;
     border: 2px solid #333;
@@ -55,9 +58,10 @@ input:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    max-width: 400px;
 }
 button {
-    padding: 12px 12px;
+    padding: 25px 30px;
     border: none;
     border-radius: 10px;
     background: #1f6fb2;
@@ -90,6 +94,16 @@ h1 {
     z-index: -1;
 }
 .conteudo {
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .caixa-busca, .caixa-resultado {
+        font-size: 35px;
+    }
+}   
