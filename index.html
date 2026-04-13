@@ -1,31 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Tempo Agora</title>
     <link rel="stylesheet" href="estilo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <div class="container">
-        <h1>Tempo Agora</h1>
-        <div class="caixa-busca">
-            <h2>Buscar</h2>
-            <input type="text" id="cidade" placeholder="Digite o nome da cidade" />
-            <button onclick="BuscarClima()" id="buscar">Buscar</button>
-        </div>
-        <div class="caixa-resultado">
-            <h2>resultado</h2>
-            <div id="resultado">Nenhum dado ainda...</div>
-        </div>
+  <body>
+    <div class="background-image"></div>
 
-
+    <div class="container conteudo">
+      <h1>Tempo Agora</h1>
+      <div class="caixa-busca">
+        <h2>Buscar</h2>
+        <input type="text" id="cidade" placeholder="Digite o nome da cidade" />
+        <button onclick="BuscarClima()" id="buscar">Buscar</button>
+      </div>
+      <div class="caixa-resultado">
+        <h2>Resultado</h2>
+        <div id="resultado">Nenhum dado ainda...</div>
+      </div>
     </div>
     <script src="logica.js"></script>
-</body>
-
+  </body>
 </html>
