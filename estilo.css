@@ -45,7 +45,7 @@ input:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    max-width: 400px;
+    max-width: 300px;
 
 }
 .caixa-resultado {
@@ -58,10 +58,10 @@ input:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    max-width: 400px;
+    max-width: 300px;
 }
 button {
-    padding: 25px 30px;
+    padding: 15px 30px;
     border: none;
     border-radius: 10px;
     background: #1f6fb2;
@@ -80,8 +80,8 @@ button:hover {
 h1 {
     color: #000000;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-size: 69px;
-    padding: 14px;
+    font-size: 73px;
+    padding: 10px;
 }
 .background-image {
     position: fixed;
